@@ -5,6 +5,7 @@ This uses the following Flickr API endpoint to pull in a public set of photos to
 
 ## Installation
 ```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="path/to/flickrset.min.js"></script>
 ```
 
@@ -33,10 +34,10 @@ https://developers.google.com/speed/libraries#jquery
 ## Options
 | Key  | Default Value  | Valid types | Description  |
 |---|---|---|---|
-| `api_key` | `null` | String | **Required.** You can get this from your Flickr account here. https://www.flickr.com/services/apps/create/ |
-| `photo_set` | `null` | String | **Required.** This tells Flickrset which PUBLIC album to get from Flickr |
-| `user_id` | `null` | String | Your Flickr ID. You can see this at the top of the right hand column here. https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos |
-| `selected_size` | `Large Square` | `Strong` | Size of the image to get. (Square, Large Square, Thumbnail, Small, Small 320, Small 400, Medium, Medium 640, Medium 800, Large, Large 1600, Large 2048, X-Large 3k, X-Large 4k) |
+| `api_key` | `null` | `String` | **Required.** You can get this from your Flickr account here. https://www.flickr.com/services/apps/create/ |
+| `photo_set` | `null` | `String` | **Required.** This tells Flickrset which PUBLIC album to get from Flickr |
+| `user_id` | `null` | `String` | Your Flickr ID. You can see this at the top of the right hand column here. https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos |
+| `selected_size` | `Large Square` | `String` | Size of the image to get. (Square, Large Square, Thumbnail, Small, Small 320, Small 400, Medium, Medium 640, Medium 800, Large, Large 1600, Large 2048, X-Large 3k, X-Large 4k) |
 | `wrapper_id` | `#results` | `String, DOM Element` | The ID of the element to put the photos in |
 | `per_page` | `12` | `String `| Amount of images to get from Album. |
 | `photo_wrapper` | `a` | `String` | Tag to put around the image. Default is anchor |
@@ -46,7 +47,7 @@ https://developers.google.com/speed/libraries#jquery
 | `array_only` | `false` | `Boolean` | Add images to an array and don't output to the HTML this can be accessed as FlickrPhotosetArray from the console. |
 | `debug` | `false` | `Boolean` | Add debug messages to console to help you implement. |
 
-Flickr Endpoints: 
+## Flickr Endpoints: 
 https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos
 https://www.flickr.com/services/api/explore/flickr.photosets.getSizes
 
