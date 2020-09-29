@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>FlickrSet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="flickrset.min.js"></script>
+    <script>
+
+
+		$(document).ready(function(){
+
+			var photos = new FlickrSet({
+				api_key: '', 
+				photo_set: '', 
+				user_id: '', 
+				selected_size: 'Large Square',
+				wrapper_id: '#FlickrSet',
+				photo_wrapper: 'a',
+				photo_wrapper_class: "added_class",
+				per_page: 9,
+				use_photo_set_title: true,
+				photo_set_title_tag: 'h2',
+				debug: true,
+			});
+
+			photos.run();
+
+
+		});
+
+</script>
+</head>
+
+<body>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div id="FlickrSet"></div>
+			</div>
+			
+		</div>
+	</section>
+</body>
+
+</html>
