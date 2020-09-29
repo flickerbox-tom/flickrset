@@ -1,7 +1,7 @@
 # Flickrset
 Simple Flickr photoset implementation using jQuery (1, 2 or 3).
 
-This uses the following Flickr API endpoint to pull in a public set of photos to your page using Javascript.
+This uses the Flickr API endpoint to pull in a `public` album of photos to your page using Javascript.
 
 ## Installation
 ```html
